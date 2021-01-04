@@ -3,7 +3,7 @@ Convert Roman to integers
 '''
 
 
-# My Solution (80.67%)
+# My Solution (Runtime: 80.67%)
 def romanToInt(self, s: str) -> int:
     number = 0
     conversion = {

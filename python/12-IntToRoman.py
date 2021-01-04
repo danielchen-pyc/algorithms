@@ -2,7 +2,7 @@
 Convert integers to Roman
 '''
 
-# My Solution (18.07%)
+# My Solution (Runtime: 18.07%)
 def intToRoman(self, num: int) -> str:
     tens_roman = ['I', 'X', 'C', 'M']
     fives_roman = [' ', 'V', 'L', 'D']
