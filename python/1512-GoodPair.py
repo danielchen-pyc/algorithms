@@ -7,7 +7,7 @@ Return the number of good pairs.
 '''
 
 
-
+# My Solution (Runtime: 90.51%)
 def numIdenticalPairs(self, nums: List[int]) -> int:
     count = 0
     prev = 0
