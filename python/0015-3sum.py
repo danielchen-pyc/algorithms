@@ -78,3 +78,26 @@ def threeSum(self, nums):
                     r -= 1
                 l += 1; r -= 1
     return res
+
+
+
+# Practice: 4sum
+def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+    if len(nums) < 4:
+        return []
+    res = set()
+    nums.sort()
+    print(nums)
+    for i, num1 in enumerate(nums):
+        for j, num2 in enumerate(nums[i+1:]):
+            if i >= 1 and (num1 == nums[i-1]):
+                continue
+            d = {}
+            for num3 in nums[i+2:]:
+                if num2 == num3 and nums[j+i+1] != nums[j+i]:
+                    continue
+                if num3 not in d:
+                    d[-num1-num2-num3] = 1
+                else:
+                    res.add(tuple(sorted((num1, num2, num3, -num1-num2-num3))))
+    return list(res)
