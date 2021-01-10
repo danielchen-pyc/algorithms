@@ -34,7 +34,7 @@ def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
 
 
 
-# Recursive Solution Runtime 73.97%
+# Recursive Solution Runtime 91.27%
 def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
     if not l1 or not l2:
         return l1 or l2
