@@ -27,3 +27,18 @@ def removeDuplicates(self, nums: List[int]) -> int:
 # Other Solution (Runtime 80.15%)
 def removeDuplicates(self, nums: List[int]) -> int:
     nums[:] = list(Counter(nums).keys())
+
+
+# Other Solution (Runtime 80.15%)
+def removeDuplicates(self, nums: List[int]) -> int:
+    if not A:
+        return 0
+
+    newTail = 0
+
+    for i in range(1, len(nums)):
+        if nums[i] != nums[newTail]:
+            newTail += 1
+            nums[newTail] = nums[i]
+
+    return newTail + 1
