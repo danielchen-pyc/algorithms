@@ -23,3 +23,14 @@ def strStr(self, haystack: str, needle: str) -> int:
             if i+len(needle) >= len(haystack):
                 return -1
     return -1
+
+
+
+# Other Solution (Runtime 71.19% Memory 88.73%)
+def strStr(self, haystack: str, needle: str) -> int:
+    if len(needle) == 0:
+        return 0
+    elif needle not in haystack:
+        return -1
+    else:
+        return len(haystack.split(needle)[0])
